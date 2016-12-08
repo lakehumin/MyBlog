@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>百度地图离线API制作 | Lake&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="百度地图,工具" />
+    
+    <meta name="description" content="百度地图离线API制作，以API v1.3为例。更高版本请自行搜索。
+第一步访问 http://api.map.baidu.com/api?v=1.3 得到如下内容12345678(function()&amp;#123;    window.wise=1;    window.netSpeed=254;    window.netType=1;    window.BMap_loadScriptTim">
+<meta property="og:type" content="article">
+<meta property="og:title" content="百度地图离线API制作">
+<meta property="og:url" content="http://lakehumin.github.io/2016/12/08/BaiduMapAPI/index.html">
+<meta property="og:site_name" content="Lake's Blog">
+<meta property="og:description" content="百度地图离线API制作，以API v1.3为例。更高版本请自行搜索。
+第一步访问 http://api.map.baidu.com/api?v=1.3 得到如下内容12345678(function()&amp;#123;    window.wise=1;    window.netSpeed=254;    window.netType=1;    window.BMap_loadScriptTim">
+<meta property="og:image" content="http://lakehumin.github.io/2016/12/08/BaiduMapAPI/baiduMap.jpg">
+<meta property="og:updated_time" content="2016-12-08T11:57:47.465Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="百度地图离线API制作">
+<meta name="twitter:description" content="百度地图离线API制作，以API v1.3为例。更高版本请自行搜索。
+第一步访问 http://api.map.baidu.com/api?v=1.3 得到如下内容12345678(function()&amp;#123;    window.wise=1;    window.netSpeed=254;    window.netType=1;    window.BMap_loadScriptTim">
+<meta name="twitter:image" content="http://lakehumin.github.io/2016/12/08/BaiduMapAPI/baiduMap.jpg">
+    
+
+    
+        <link rel="alternate" href="/" title="Lake&#39;s Blog" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/css/images/lake_logo.png" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+    
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">谦虚 务实 keep moving.</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Category</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Tag</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/开发工具/">开发工具</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-BaiduMapAPI" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        百度地图离线API制作
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-subtitle">
+                <a href="/2016/12/08/BaiduMapAPI/" class="article-date">
+    <time datetime="2016-12-08T07:47:17.000Z" itemprop="datePublished">2016-12-08</time>
+</a>
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/百度地图/">百度地图</a></li></ul>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <img src="/2016/12/08/BaiduMapAPI/baiduMap.jpg" alt="配图木有名字" title="配图木有名字">
+<p>百度地图离线API制作，以API v1.3为例。更高版本请自行搜索。</p>
+<h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>访问 <a href="http://api.map.baidu.com/api?v=1.3" target="_blank" rel="external">http://api.map.baidu.com/api?v=1.3</a> 得到如下内容<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">window</span>.wise=<span class="number">1</span>;</div><div class="line">    <span class="built_in">window</span>.netSpeed=<span class="number">254</span>;</div><div class="line">    <span class="built_in">window</span>.netType=<span class="number">1</span>;</div><div class="line">    <span class="built_in">window</span>.BMap_loadScriptTime = (<span class="keyword">new</span> <span class="built_in">Date</span>).getTime();</div><div class="line">    <span class="built_in">document</span>.write(<span class="string">'&lt;script type="text/javascript" src="http://api.map.baidu.com/getscript?v=1.3&amp;ak=&amp;services=&amp;t=20150527115231"&gt;&lt;/script&gt;'</span>);</div><div class="line">    <span class="built_in">document</span>.write(<span class="string">'&lt;link rel="stylesheet" type="text/css" href="http://api.map.baidu.com/res/13/bmap.css"/&gt;'</span>);</div><div class="line">&#125;)();</div></pre></td></tr></table></figure></p>
+<p>这一步将获得一个js文件的位置和一个css文件的位置，然后分别下载下来，放在准备好的文件夹里面，我分别存储在/js和/css里面。js的路径后面有若干参数，不管，下载下来的文件重新命名就好，比如js文件命名为<code>apiv1.3.min.js</code></p>
+<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>修改这个js中的代码。由于代码是压缩在一行上的，可通过网上的代码在线格式化。</p>
+<ol>
+<li><p>搜索变量：<code>imgPath</code>，直到找到一段代码</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x=m?<span class="string">"https://sapi.map.baidu.com/"</span>:<span class="string">"http://api.map.baidu.com/"</span>;</div><div class="line"><span class="keyword">var</span> cd=&#123;<span class="attr">imgPath</span>:x+<span class="string">"images/"</span>,<span class="attr">cityNames</span>:&#123;<span class="string">"\u5317\u4eac"</span>:<span class="string">"bj"</span>,</div></pre></td></tr></table></figure>
+<p> 把<code>imgPath:x+&quot;images/&quot;</code>中的x去掉即可，这样就变成了跟网络地址无关的相对位置了。这里指出的<code>images</code>文件夹，是与将来的html文件夹平行的目录里面的。<br> 例如：</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> x=m?<span class="string">"https://sapi.map.baidu.com/"</span>:<span class="string">"http://api.map.baidu.com/"</span>;</div><div class="line"><span class="keyword">var</span> cd=&#123;<span class="attr">imgPath</span>:<span class="string">"images/"</span>,<span class="attr">cityNames</span>:&#123;<span class="string">"\u5317\u4eac"</span>:<span class="string">"bj"</span>,</div></pre></td></tr></table></figure>
+</li>
+<li><p>搜索变量：<code>_baseUrl</code>，直到找到这样的一段代码</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">preLoaded:&#123;&#125;,<span class="attr">Config</span>:&#123;<span class="attr">_baseUrl</span>:x+<span class="string">"getmodules?v=1.3"</span>,<span class="attr">_timeout</span>:<span class="number">5000</span>&#125;,</div></pre></td></tr></table></figure>
+<p> 同样，要去掉x，这个x也是前面这段代码中的x。同时，不仅要去掉x，更要把地址指向js目录。<br> 例如：</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">preLoaded:&#123;&#125;,<span class="attr">Config</span>:&#123;<span class="attr">_baseUrl</span>:<span class="string">"js/"</span>,<span class="attr">_timeout</span>:<span class="number">5000</span>&#125;,</div></pre></td></tr></table></figure>
+</li>
+<li><p>继续搜索下一个<code>_baseUrl</code>，得到下面的代码：</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> cP=cN.Config._baseUrl+<span class="string">"&amp;mod="</span>+cN.Module._arrMdls.join(<span class="string">","</span>);</div><div class="line">    cy.request(cP);</div><div class="line">    cN.Module._arrMdls.length=<span class="number">0</span>;</div><div class="line">    cN.delayFlag=<span class="literal">false</span>;</div><div class="line">&#125;,<span class="number">1</span>);</div></pre></td></tr></table></figure>
+<p> 直接修改<code>cP</code>变量（变量名与版本有关，可能不同），注意：这里把加载地址直接写死</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> cP=cN.Config._baseUrl+<span class="string">"modules"</span>;</div><div class="line">cy.request(cP);</div></pre></td></tr></table></figure>
+<p> 这样，我们把动态模块加载改为了手动加载离线模块文件。<br> 访问这个地址 <a href="http://api.map.baidu.com/getmodules?v=1.3&amp;mod=map,oppc,tile,control,marker,poly" target="_blank" rel="external">http://api.map.baidu.com/getmodules?v=1.3&amp;mod=map,oppc,tile,control,marker,poly</a> 我们就能拿到相应参数的模块源文件。<br> 新建文件<code>modules</code>，放在js文件夹里面即可。</p>
+</li>
+<li>关键的一步：搜索<code>getTilesUrl</code>直到找到这样的一段（变量名aU可能不一样）<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">aU.getTilesUrl = <span class="function"><span class="keyword">function</span>(<span class="params">cN, cQ</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> cR = cN.x;</div><div class="line">    <span class="keyword">var</span> cO = cN.y;</div><div class="line">    <span class="keyword">var</span> T = <span class="string">"20150518"</span>;</div><div class="line">    <span class="keyword">var</span> cP = <span class="string">"pl"</span>;</div><div class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.map.highResolutionEnabled()) &#123;</div><div class="line">        cP = <span class="string">"ph"</span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">var</span> cM = j[<span class="built_in">Math</span>.abs(cR + cO) % j.length] + <span class="string">"?qt=tile&amp;x="</span></div><div class="line">		+ (cR + <span class="string">""</span>).replace(<span class="regexp">/-/gi</span>, <span class="string">"M"</span>) + <span class="string">"&amp;y="</span></div><div class="line">		+ (cO + <span class="string">""</span>).replace(<span class="regexp">/-/gi</span>, <span class="string">"M"</span>) + <span class="string">"&amp;z="</span> + cQ + <span class="string">"&amp;styles="</span> + cP</div><div class="line">        + (a9.browser.ie == <span class="number">6</span> ? <span class="string">"&amp;color_dep=32&amp;colors=50"</span> : <span class="string">""</span>)</div><div class="line">        + <span class="string">"&amp;udt="</span> + T;</div><div class="line">    <span class="keyword">return</span> cM.replace(<span class="regexp">/-(\d+)/gi</span>, <span class="string">"M$1"</span>)</div><div class="line">&#125;;</div><div class="line"><span class="built_in">window</span>.BMAP_NORMAL_MAP = <span class="keyword">new</span> cv(<span class="string">"\u5730\u56fe"</span>, aU, &#123;</div><div class="line">    <span class="attr">tips</span> : <span class="string">"\u663e\u793a\u666e\u901a\u5730\u56fe"</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><code>getTilesUrl</code>这个方法，这里就是返回瓦片未知的关键方法。两个参数中，第一个参数是{x，y}，第二个参数就是z，这样xyz就都有了。<br>直接把它计算出来的cM的结果重新计算一下，改成：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cM = <span class="string">"tiles/"</span> + cQ + <span class="string">"/"</span> + cR + <span class="string">"/"</span> + cO + <span class="string">".jpg"</span>;</div></pre></td></tr></table></figure></p>
+<p>.jpg后缀与你下载的瓦片图片格式有关。<br>这样就设置了<code>BMAP_NORMAL_MAP</code>地图类型的地图瓦片获取url，即为放在tiles目录下的瓦片资源。同理可以设置卫星<code>BMAP_SATELLITE_MAP</code>等地图类型的离线瓦片url。</p>
+<h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>下载相关资源</p>
+<ol>
+<li>图片文件<br>像一些logo等图片资源。可通过chrome开发者工具查看缺少的图片文件，以及url。然后自行下载。将图片放在<code>images</code>文件夹中，并修改<code>bmap.css</code>中相应的url为本地路径。</li>
+<li><p>依赖模块API文件<br> 如果缺少某个依赖模块，则无法使用相应的API。<br> 在运行前期工作中的在线地图时，就可发现，依赖的库参数是什么。例如：以下的代码运行，所请求的依赖库参数是<a href="http://api.map.baidu.com/getmodules?v=1.3&amp;mod=map,oppc,tile,control" target="_blank" rel="external">http://api.map.baidu.com/getmodules?v=1.3&amp;mod=map,oppc,tile,control</a></p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="keyword">var</span> map = <span class="keyword">new</span> BMap.Map(<span class="string">"container"</span>,&#123;<span class="attr">mapType</span>:BMAP_NORMAL_MAP&#125;);</div><div class="line">    <span class="keyword">var</span> point = <span class="keyword">new</span> BMap.Point(<span class="number">116.404</span>, <span class="number">39.915</span>);    <span class="comment">// 创建点坐标</span></div><div class="line">    map.centerAndZoom(point,<span class="number">5</span>);                     <span class="comment">// 初始化地图,设置中心点坐标和地图级别。</span></div><div class="line"></div><div class="line">    <span class="comment">//map.addControl(new BMap.MapTypeControl());</span></div><div class="line">    map.addControl(<span class="keyword">new</span> BMap.NavigationControl());</div><div class="line">    map.enableScrollWheelZoom();                  <span class="comment">// 启用滚轮放大缩小。</span></div><div class="line">    map.enableKeyboard();                         <span class="comment">// 启用键盘操作。</span></div><div class="line">    <span class="comment">//map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的</span></div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p> 总共有哪些依赖模块可以去<code>apiv1.3.min.js</code>中搜索<code>Dependency</code></p>
+</li>
+<li>瓦片资源<br>可以选择 <code>全能电子地图下载器</code> 下载，其中<code>1.9.5</code>版本有破解，不过有些瓦片无法下载。或者选择自己拼凑瓦片，有教程获取瓦片url。</li>
+</ol>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>离线API算是做好了，目录结构大致为：</p>
+<ul>
+<li>css<ul>
+<li>bmap.css</li>
+</ul>
+</li>
+<li>images</li>
+<li>js<ul>
+<li>apiv1.3.min.js</li>
+<li>modules</li>
+</ul>
+</li>
+<li>tiles</li>
+</ul>
+<p><a href="https://github.com/lakehumin/hawkui" target="_blank" rel="external">HawkUI</a>项目中便用到了该离线API，文件在<code>public</code>目录下。</p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://lakehumin.github.io/2016/12/08/BaiduMapAPI/" data-id="ciwgbpbgh0001vsbpiebfjb2m" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+    </section>
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/lakehumin/MyBlog" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/12/08/BaiduMapAPI/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2016/12/08/BaiduMapAPI/baiduMap.jpg)" alt="百度地图离线API制作" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/开发工具/">开发工具</a></p>
+                            <p class="item-title"><a href="/2016/12/08/BaiduMapAPI/" class="title">百度地图离线API制作</a></p>
+                            <p class="item-date"><time datetime="2016-12-08T07:47:17.000Z" itemprop="datePublished">2016-12-08</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/百度地图/">百度地图</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/工具/" style="font-size: 10px;">工具</a> <a href="/tags/百度地图/" style="font-size: 10px;">百度地图</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="https://github.com/lakehumin/">GitHub</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2016 Lake</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
