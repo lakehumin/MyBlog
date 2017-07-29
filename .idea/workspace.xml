@@ -2,18 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="808c61be-5fe0-4f34-843d-05228d8de6b9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/images/lake.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/images/lake_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/images/logo-header.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/images/opacity-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/images/s-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/images/thumb-default-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/images/thumb-default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/insight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/font-awesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/jquery/2.0.3/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/css/lg-fb-comment-box.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/css/lg-fb-comment-box.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/css/lg-fb-comment-box.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/css/lg-transitions.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/css/lg-transitions.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/css/lg-transitions.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/css/lightgallery.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/css/lightgallery.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/css/lightgallery.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/fonts/lg.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/fonts/lg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/fonts/lg.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/fonts/lg.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/img/video-play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/img/vimeo-play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/img/youtube-play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-autoplay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-autoplay.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-fullscreen.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-fullscreen.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-hash.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-hash.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-pager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-pager.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-share.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-share.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-thumbnail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-thumbnail.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-video.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-zoom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lg-zoom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lightgallery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/lightgallery/js/lightgallery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/source-code-pro/fonts/mrl8jkM18OlOQN8JLgasD9V_2ngZ8dMf8fLgjYEouxg.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/source-code-pro/fonts/mrl8jkM18OlOQN8JLgasDy2Q8seG17bfDXYR_jUsrzg.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/source-code-pro/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/titillium-web/fonts/7XUFZ5tgS-tD6QamInJTcSo_WB_cotcEMUw1LsIE8mM.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/titillium-web/fonts/7XUFZ5tgS-tD6QamInJTcZSnX671uNZIV63UdXh3Mg0.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/titillium-web/fonts/anMUvcNT0H1YN4FII8wpr4-67659ICLY8bMrYhtePPA.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/titillium-web/fonts/anMUvcNT0H1YN4FII8wpr46gJz9aNFrmnwBdd69aqzY.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/titillium-web/fonts/anMUvcNT0H1YN4FII8wpr9INifKjd1RJ3NxxEi9Cy2w.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/titillium-web/fonts/anMUvcNT0H1YN4FII8wpr_SNRT0fZ5CX-AqRkMYgJJo.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/libs/titillium-web/styles.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.json" afterPath="$PROJECT_DIR$/db.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/2016/12/08/BaiduMapAPI/index.html" afterPath="$PROJECT_DIR$/public/2016/12/08/BaiduMapAPI/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about/index.html" afterPath="$PROJECT_DIR$/public/about/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/2016/12/index.html" afterPath="$PROJECT_DIR$/public/archives/2016/12/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/2016/index.html" afterPath="$PROJECT_DIR$/public/archives/2016/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/archives/index.html" afterPath="$PROJECT_DIR$/public/archives/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/categories/开发工具/index.html" afterPath="$PROJECT_DIR$/public/categories/开发工具/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/content.json" afterPath="$PROJECT_DIR$/public/content.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/工具/index.html" afterPath="$PROJECT_DIR$/public/tags/工具/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/tags/百度地图/index.html" afterPath="$PROJECT_DIR$/public/tags/百度地图/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/curl-google-com.md" afterPath="$PROJECT_DIR$/source/_posts/curl-google-com.md" />
     </list>
     <ignored path="MyBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,11 +112,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="curl-google-com.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_posts/curl-google-com.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -162,6 +228,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -256,12 +336,12 @@
       <workItem from="1481274112644" duration="462000" />
       <workItem from="1500092433169" duration="81000" />
       <workItem from="1500092543824" duration="774000" />
-      <workItem from="1501332299768" duration="1065000" />
+      <workItem from="1501332299768" duration="1613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25138000" />
+    <option name="totallyTimeSpent" value="25686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="170" y="91" width="1026" height="546" extended-state="0" />
@@ -395,13 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -457,6 +530,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/hueman/_config.yml" />
+    <entry file="file://$PROJECT_DIR$/public/2017/07/29/curl-google-com/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/BaiduMapAPI.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -465,10 +546,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/curl-google-com.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>
