@@ -10,3 +10,4 @@
 4. 执行部署，将页面部署到github.io
 
 ### 必要时备份MyBlog分支backup
+### 修改hueman主题时，务必同时更新根目录下的hueman主题
