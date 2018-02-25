@@ -9,5 +9,12 @@
 3. 本地MyBlogTemp目录拉取远程仓库MyBlog的代码进行编译
 4. 执行部署，将页面部署到github.io
 
+具体步骤
+1. 打开MyBlog仓库并cd到_post目录，copy一份post文稿，并创建对应名字的资源目录
+2. 修改post内容，可以顺便配图
+3. git提交并push
+4. cd到MyBlogTemp仓库，git拉取更新
+5. hexo clean清除，然后hexo d部署，完成！
+
 ### 必要时备份MyBlog分支backup
 ### 修改hueman主题时，务必同时更新根目录下的hueman主题
