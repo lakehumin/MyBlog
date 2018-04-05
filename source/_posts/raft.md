@@ -13,7 +13,7 @@ categories:
 1. broadcastTime<<electionTimeout<<MTBF
 	- broadcastTime。leader发送心跳的时间间隔
 	- electionTimeout。选举超时时长（值随机），若这段时间内没有leader心跳触发选举。
-	- MTBF。服务器发生故障的时间间隔。  
+	- MTBF。服务器发生故障的时间间隔。
 
 	MTBF一般为几个月以上。electionTimeout为机器故障时的不可用时长一般为10ms-500ms。broadcastTime应该比electionTimeout小一个数量级，为0.5ms-20ms。
 2. server有三种状态follower、candidate、leader。系统初始为follower状态，超过electionTimeout开始选举。没选出结果超出electionTimeout，继续开始下一轮选举。
@@ -24,11 +24,11 @@ categories:
 	- candidate：负责选举投票，Raft刚启动时由一个节点从follower转为candidate发起选举，选举出leader后从candidate转为leader状态
 4. 服务器状态
 	在所有服务器上持久存在的：（在响应远程过程调用 RPC 之前稳定存储的）
-| 名称        | 描述                                                    |
-| :---------: |:-------------------------------------------------------:|
-| currentTerm | 服务器最后知道的任期号（从0开始递增）                         |
-| votedFor    | 在当前任期内收到选票的候选人 id（如果没有就为 null）           |
-| log[]       | 日志条目；每个条目包含状态机的要执行命令和从领导人处收到时的任期号 |
+    | 名称        | 描述                                                    |
+    | :---------: |:-------------------------------------------------------:|
+    | currentTerm | 服务器最后知道的任期号（从0开始递增）                         |
+    | votedFor    | 在当前任期内收到选票的候选人 id（如果没有就为 null）           |
+    | log[]       | 日志条目；每个条目包含状态机的要执行命令和从领导人处收到时的任期号 |
 	在所有服务器上不稳定存在的：
 
 | 名称         | 描述                                                    |
