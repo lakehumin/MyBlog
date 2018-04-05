@@ -16,5 +16,10 @@
 4. cd到MyBlogTemp仓库，git拉取更新
 5. hexo clean清除，然后hexo d部署，完成！
 
+编写post建议
+1. cd MyBlogTemp
+2. 执行hexo server
+3. 打开http://localhost:4000/admin，便能实现markdown实时解析
+
 ### 必要时备份MyBlog分支backup
 ### 修改hueman主题时，务必同时更新根目录下的hueman主题
